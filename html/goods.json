@@ -1,0 +1,104 @@
+{
+	"currency" : "₽",
+	"currencyCode" : "RUB",
+	"currencyCoef" : 1.0,
+	"items" :
+	[
+		{
+			"id" : "1",
+			"available" : true,
+			"name" : "Burger",
+			"image" : "01.gif",
+			"description" : "",
+			"price" : 4990
+		},
+		{
+			"id" : "2",
+			"available" : true,
+			"name" : "Fries",
+			"image" : "02.png",
+			"description" : "",
+			"price" : 1490
+		},
+		{
+			"id" : "3",
+			"available" : true,
+			"name" : "HotDog",
+			"image" : "03.png",
+			"description" : "",
+			"price" : 3490
+		},
+		{
+			"id" : "4",
+			"available" : true,
+			"name" : "Tako",
+			"image" : "04.png",
+			"description" : "",
+			"price" : 3990
+		},
+		{
+			"id" : "5",
+			"available" : true,
+			"name" : "Pizza",
+			"image" : "05.png",
+			"description" : "",
+			"price" : 7990
+		},
+		{
+			"id" : "6",
+			"available" : true,
+			"name" : "Donut",
+			"image" : "06.png",
+			"description" : "",
+			"price" : 1490
+		},
+		{
+			"id" : "7",
+			"available" : true,
+			"name" : "Popcorn",
+			"image" : "07.png",
+			"description" : "",
+			"price" : 1990
+		},
+		{
+			"id" : "8",
+			"available" : true,
+			"name" : "Coke",
+			"image" : "08.png",
+			"description" : "",
+			"price" : 1490
+		},
+		{
+			"id" : "9",
+			"available" : true,
+			"name" : "Cake",
+			"image" : "09.png",
+			"description" : "",
+			"price" : 10990
+		},
+		{
+			"id" : "10",
+			"available" : true,
+			"name" : "Icecream",
+			"image" : "010.png",
+			"description" : "",
+			"price" : 5990
+		},
+		{
+			"id" : "11",
+			"available" : true,
+			"name" : "Cookie",
+			"image" : "011.png",
+			"description" : "",
+			"price" : 3990
+		},
+		{
+			"id" : "12",
+			"available" : true,
+			"name" : "Flan",
+			"image" : "012.png",
+			"description" : "",
+			"price" : 7990
+		}
+	]
+}

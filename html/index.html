@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script src="app.js"></script>
+        <script src="setPage.js"></script>
+        <title>tgWebAppTest</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="debugVersion">
+                v1.0.0.60
+            </div>
+            <div id="page1Container" class="pageContainer">
+                <div id="cardList">
+                    <template id="cardListItemTemplate">
+                        <div class="card">
+                            <div class="cardImage">
+                                <div class="cardImageContainer">
+                                    <img src="#" alt="cardPhoto">
+                                </div>
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardInfoContainer">
+                                    <div class="cardName">
+                                    </div>
+                                    <div class="cardSpacer">
+                                        ∙
+                                    </div>
+                                    <div class="cardCurrency">
+                                    </div>
+                                    <div class="cardPrice">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardBtns">
+                                <div class="goodsBtns">
+                                    <button class="subtractBtn goodsBtnsMainStyle">─</button>
+                                    <div class="itemCounter">0</div>
+                                    <button class="addBtn goodsBtnsMainStyle">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            <div id="page2Container" class="pageContainer">
+                <div id="order">
+                    <template id="orderListItemTemplate">
+                        <div class="orderItem">
+                            <div class="orderItemImage">
+                                <img class="orderItemImageImg" src="#" alt="orderPhoto">
+                            </div>
+                            <div class="orderItemName">
+                                <h5 class="orderItemNameName">
+                                    
+                                </h5>
+                                <h5 class="orderItemNameCount">
+                                    
+                                </h5>
+                            </div>
+                            <div class="orderItemTotalPrice">
+                                
+                            </div>
+                        </div>
+                    </template>
+
+                    <h3 class="orderTitle">
+                        YOUR ORDER
+                    </h3>
+
+                    <div id="orderList">
+                    </div>
+
+                    <textarea onkeypress="autoGrow(this);" id="orderComment" placeholder="Add comment..." rows="1"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
