@@ -2,7 +2,7 @@ import json
 
 import aiofiles as aiofiles
 from aiogram.dispatcher.filters import Command
-from config import BOT_TOKEN, PROVIDER_TOKEN
+from config import BOT_TOKEN, PROVIDER_TOKEN, VPS_IP
 import asyncio
 from aiogram import Bot, Dispatcher, executor
 from aiogram.types import Message, PreCheckoutQuery, ContentType, WebAppInfo, ReplyKeyboardMarkup, KeyboardButton
@@ -67,11 +67,11 @@ async def server_start():
     await runner.setup()
     # ssl_context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
     # ssl_context.load_cert_chain('domain_srv.crt', 'domain_srv.key')
-    site = web.TCPSite(runner=runner, host='localhost', port=80
+    site = web.TCPSite(runner=runner, host=VPS_IP, port=443
                        # ssl_context=ssl_context
                        )
     await site.start()
-    print("======= Serving on http://127.0.0.1:80/ ======")
+    print(f'======= Serving on http://{VPS_IP}:443/ ======')
     # pause here for very long time by serving HTTP requests and
     # waiting for keyboard interruption
     # await asyncio.sleep(100 * 3600)
