@@ -1,5 +1,4 @@
 import json
-import ssl
 
 import aiofiles as aiofiles
 from aiogram.dispatcher.filters import Command
@@ -30,7 +29,7 @@ async def handler(request: web.BaseRequest):
                                                currency=request.query.getone(key='currency'),
                                                prices=prices,
                                                provider_token=PROVIDER_TOKEN,
-                                               payload=0)
+                                               payload='')
         result = "{{\"ok\":true,\"result\":\"{0}\"}}".format(result)
         content_type = 'application/json'
         print(result)
