@@ -9,7 +9,7 @@ from aiogram import Bot, Dispatcher, executor
 from aiogram.types import Message, PreCheckoutQuery, ContentType, WebAppInfo, ReplyKeyboardMarkup, KeyboardButton
 from aiohttp import web
 
-SITE_FOLDER = "C:/Users/litvi/OneDrive/Документы/HTML/tgWebAppTest/{0}"
+SITE_FOLDER = "html/{0}"
 
 
 async def handler(request: web.BaseRequest):
